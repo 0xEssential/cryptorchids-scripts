@@ -2,6 +2,7 @@ import 'dotenv/config';
 import {ethers} from 'hardhat';
 import '@nomiclabs/hardhat-ethers';
 import {address, abi} from './deployments/rinkeby/CryptOrchidERC721.json';
+import fetch from 'node-fetch';
 
 import {request, gql} from 'graphql-request';
 import {Contract} from 'hardhat/internal/hardhat-network/stack-traces/model';
@@ -46,8 +47,8 @@ async function main() {
 
   // Sorry OpenSea 🤷‍♂️
   // This updates metadata for all of our tokens every night
-  for (let token = 1; token <= 10; token++) {
-    await fetch(`https://api.opensea.io/api/v1/asset/${process.env.CRYPTORCHIDS_CONTRACT_ADDRESS}/${token}/?force_update=true`)
+  for (let token = 1; token <= 10_000; token++) {
+    fetch(`https://api.opensea.io/api/v1/asset/${process.env.CRYPTORCHIDS_CONTRACT_ADDRESS}/${token}/?force_update=true`)
   }
 
   const baseNonce = ethers.provider.getTransactionCount(accounts[0].address);
