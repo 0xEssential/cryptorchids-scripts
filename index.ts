@@ -48,7 +48,11 @@ async function main() {
   // Sorry OpenSea 🤷‍♂️
   // This updates metadata for all of our tokens every night
   for (let token = 1; token <= 10; token++) {
-    fetch(`https://api.opensea.io/api/v1/asset/${process.env.CRYPTORCHIDS_CONTRACT_ADDRESS}/${token}/?force_update=true`)
+    try {
+      fetch(`https://api.opensea.io/api/v1/asset/${process.env.CRYPTORCHIDS_CONTRACT_ADDRESS}/${token}/?force_update=true`)
+    } catch {
+      break
+    }
   }
 
   const baseNonce = ethers.provider.getTransactionCount(accounts[0].address);
