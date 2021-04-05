@@ -47,7 +47,7 @@ async function main() {
 
   // Sorry OpenSea 🤷‍♂️
   // This updates metadata for all of our tokens every night
-  for (let token = 1; token <= 10_000; token++) {
+  for (let token = 1; token <= 10; token++) {
     fetch(`https://api.opensea.io/api/v1/asset/${process.env.CRYPTORCHIDS_CONTRACT_ADDRESS}/${token}/?force_update=true`)
   }
 
