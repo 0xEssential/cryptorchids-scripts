@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "CurrentTime",
+  "sourceName": "contracts/Libraries/CurrentTime.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220ff768adebf96e4947d6b87c072a3411e4e0196366362c873fafdea5ee67aca9364736f6c63430006060033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220ff768adebf96e4947d6b87c072a3411e4e0196366362c873fafdea5ee67aca9364736f6c63430006060033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

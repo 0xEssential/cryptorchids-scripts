@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "CurrentTimeMock",
+  "sourceName": "contracts/test/CurrentTimeMock.sol",
+  "abi": [],
+  "bytecode": "0x608060405260008055348015601357600080fd5b50603f8060216000396000f3fe6080604052600080fdfea2646970667358221220a1e45f7f60721e4b7d2c2e84a6b899163a7b5af6ef41ddb47fbbdee7f5b0e89364736f6c63430006060033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220a1e45f7f60721e4b7d2c2e84a6b899163a7b5af6ef41ddb47fbbdee7f5b0e89364736f6c63430006060033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
